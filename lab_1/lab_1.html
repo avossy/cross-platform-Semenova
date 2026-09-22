@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhodanthe Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Ysabeau+Infant&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>rhodanthe</h1>
+        <p><i>you can make the whole place shimmer – кросплатформний застосунок ювелірного салону</i></p>
+    </div>
+</header>
+<main class="container_main">
+    <div class="card_combine">
+        <section class="card__about">
+            <h2>Про застосунок</h2>
+            <p>
+                <i>Rhodanthe</i> – це кросплатформний застосунок для ювелірного салону,
+                який працює у браузері на різних пристроях: комп'ютерах, планшетах і смартфонах.
+                Застосунок дозволяє клієнтам переглядати каталог ювелірних виробів,
+                ознайомлюватися з описом та характеристиками кожної позиції, додавати
+                вироби до обраного або кошика замовлення, а також записуватися на консультацію чи примірку в салоні.
+            </p>
+        </section>
+        <section class="card__functions">
+            <h2>Основні функції</h2>
+            <ul class="features-list">
+                <li>Перегляд каталогу ювелірних виробів (каблучки, сережки, браслети, кольє та інші прикраси)</li>
+                <li>Перегляд картки конкретного товару та детальної інформації про виріб</li>
+                <li>Пошук і фільтрація товарів (за категорією, ціною, матеріалом, колекцією)</li>
+                <li>Додавання виробів до кошика та списку обраних товарів</li>
+                <li>Оформлення замовлення</li>
+                <li>Адаптивний інтерфейс, що коректно відображається на різних екранах</li>
+                <li>Робота у будь-якому сучасному браузері</li>
+            </ul>
+        </section>
+    </div>
+    <p class="info__p">
+        Для створення інтерфейсу використано HTML і CSS, а для взаємодії
+        з користувачем - JavaScript.
+    </p>
+    <section class="catalog">
+        <h2>Каталог виробів</h2>
+        <ul class="catalog__list" id="catalogList">
+            <li class="catalog__item">
+                <article>
+                    <img src="1.png" alt="Каблучка">
+                    <h3>Каблучка «Аврора»</h3>
+                    <p>Срібло 925°, діамант 0.2 карата</p>
+                    <p>12 400 ₴</p>
+                    <button class="add-btn" type="button" data-name="Каблучка «Аврора»">
+                        Додати до обраного
+                    </button>
+                </article>
+            </li>
+            <li class="catalog__item">
+                <article>
+                    <img src="2.png" alt="Сережки">
+                    <h3>Сережки «Ніжність»</h3>
+                    <p>Срібло 925°, місячний камінь</p>
+                    <p>3 200 ₴</p>
+                    <button class="add-btn" type="button" data-name="Сережки «Ніжність»">
+                        Додати до обраного
+                    </button>
+                </article>
+            </li>
+            <li class="catalog__item">
+                <article>
+                    <img src="3.png" alt="Браслет">
+                    <h3 class="item-name">Браслет «Крапля роси»</h3>
+                    <p class="item-details">Срібло 925°, діамант</p>
+                    <p class="item-price">8 750 ₴</p>
+                    <button class="add-btn" type="button" data-name="Браслет «Крапля роси»">
+                        Додати до обраного
+                    </button>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <section class="favorites">
+        <h2>Список обраних виробів</h2>
+        <p class="empty__hint" id="emptyHint">Поки що тут порожньо. Додайте вироби з каталогу вище.</p>
+        <ul class="favorites__list" id="favoritesList"></ul>
+    </section>
+    <section class="card">
+        <h2>Обраний стек технологій</h2>
+        <p>
+            Для цього прикладу використано WebView-підхід, оскільки застосунок реалізовано
+            за допомогою вебтехнологій і він може запускатися у браузері або бути вбудованим
+            у мобільний застосунок через WebView. Такий підхід дозволяє використовувати єдину
+            кодову базу для веб-версії та мобільного застосунку, що значно спрощує розробку та підтримку.
+        </p>
+        <table class="tech__table">
+            <thead>
+            <tr>
+                <th>Компонент</th>
+                <th>Технологія</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Структура сторінки</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>Оформлення</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>Логіка</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Платформа запуску</td>
+                <td>Браузер / WebView</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Лабораторна робота 1.2: Основи кросплатформності</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

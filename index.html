@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кросплатформне програмування — лабораторні роботи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Ysabeau+Infant&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #e5dbe6;
+            color: #3b6daf;
+            font-family: 'Ysabeau Infant', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            padding: 50px 0 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-family: 'Monsieur La Doulaise', cursive;
+            font-weight: normal;
+            font-size: 60px;
+            color: #7da5da;
+        }
+
+        .header p {
+            margin-top: 8px;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .main {
+            padding: 10px 0 40px;
+        }
+
+        .lab-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lab-list li {
+            margin-bottom: 14px;
+        }
+
+        .lab-link {
+            display: block;
+            background: rgb(255 255 255 / 0.15);
+            border-radius: 15px;
+            padding: 20px 22px;
+            text-decoration: none;
+            color: #3b6daf;
+            transition: background 0.2s ease;
+        }
+
+        .lab-link:hover {
+            background: rgb(255 255 255 / 0.3);
+        }
+
+        .lab-link strong {
+            color: #7da5da;
+        }
+
+        @media (max-width: 900px) {
+            .header h1 {
+                font-size: 46px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .header {
+                padding: 35px 0 20px;
+            }
+
+            .header h1 {
+                font-size: 34px;
+            }
+
+            .lab-link {
+                padding: 16px 16px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>Cross-platform programming</h1>
+        <p><i>Кросплатформне програмування — список лабораторних робіт (Семенова Ярослава)</i></p>
+    </div>
+</header>
+
+<main class="container main">
+    <ul class="lab-list">
+        <li>
+            <a class="lab-link" href="lab_1/lab_1.html">
+                <strong>Лабораторна робота №1</strong><br>
+                Основи кросплатформності. Створення вебсторінки для застосунку ювелірного салону.
+            </a>
+        </li>
+    </ul>
+</main>
+</body>
+</html>

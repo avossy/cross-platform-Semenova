@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#e5dbe6, #b9c0cf);
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0 auto;
+    color: #7da5da;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 75px;
+    font-weight: normal;
+}
+
+li, table, ul, button {
+    margin: 0;
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: #3b6daf;
+}
+
+p {
+    text-align: justify;
+    margin: 0;
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: #3b6daf;
+}
+
+h2 {
+    text-align: center;
+    margin: 5px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-weight: 600;
+    color: #3b6daf;
+}
+
+section {
+    background: rgb(255 255 255 / 0.15);
+    border-radius: 15px;
+    padding: 12px;
+    margin: 15px auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+button {
+    display: inline-block;
+    margin: 5px;
+    padding: 2px 4px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: #7da5da;
+    font-size: 100%;
+}
+
+.card_combine {
+    display: flex;
+    gap: 20px;
+    & .card__about {
+        flex: 1.5;
+    }
+    & .card__functions {
+        flex: 2.5;
+    }
+}
+
+.catalog__list{
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.catalog__item article {
+    background: rgb(255 255 255 / 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.empty__hint, .info__p, header p, footer p {
+    text-align: center;
+}
+
+footer p {
+    margin-bottom:10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgb(125 165 218 / 0.3);
+}
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 55px;
+    }
+
+    .card_combine {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card_combine .card__about,
+    .card_combine .card__functions {
+        flex: 1;
+        max-width: 700px;
+    }
+    .catalog, .favorites, .card {
+        max-width: 700px;
+    }
+
+    .catalog__item article {
+        width: 260px;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        margin: 0 12px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    section {
+        padding: 12px 10px;
+        border-radius: 10px;
+    }
+
+    .catalog__list {
+        gap: 12px;
+    }
+
+    .catalog__item article {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    table {
+        font-size: 90%;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+}
