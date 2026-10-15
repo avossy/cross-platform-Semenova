@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #3b6daf;
+  --color-brand-dark: #2c5389;
+  --color-sky: #7da5da;
+  --color-sand: #e8dbd4;
+  --font-sans: "Playfair Display", serif;
+  --font-header: "Monsieur La Doulaise", cursive;
+}
