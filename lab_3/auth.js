@@ -1,7 +1,9 @@
 import jwt from "jsonwebtoken";
 import { users } from "./data.js";
 
-const JWT_SECRET = "secret_key_for_lab_work";
+// змінено за умовою Лаб №7 з ТСПП. Секрет не має зберігатись у образі
+// const JWT_SECRET = "secret_key_for_lab_work";
+const JWT_SECRET = process.env.JWT_SECRET;
 
 export function createToken(user) {
     return jwt.sign({ userId: user.id }, JWT_SECRET, { expiresIn: "1h" });
