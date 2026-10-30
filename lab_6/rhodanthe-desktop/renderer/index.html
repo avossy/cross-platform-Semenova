@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <title>Rhodanthe Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Ysabeau+Infant&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>rhodanthe</h1>
+            <p><i>you can make the whole place shimmer – десктопний застосунок ювелірного салону</i></p>
+        </div>
+    </header>
+    <main class="container_main">
+        <section class="card">
+            <h2>Додати новий виріб</h2>
+            <div class="form-grid">
+                <input type="text" id="jewelryNameInput" placeholder="Назва виробу" aria-label="Назва виробу" />
+                <input type="number" id="jewelryPriceInput" placeholder="Ціна, грн" aria-label="Ціна" min="0" />
+                <select id="materialSelect" aria-label="Матеріал">
+                    <option>Золото 585</option>
+                    <option>Золото 750</option>
+                    <option>Срібло 925</option>
+                </select>
+                <select id="gemstoneSelect" aria-label="Камінь">
+                    <option>Без каменю</option>
+                    <option>Діамант</option>
+                    <option>Рубін</option>
+                    <option>Сапфір</option>
+                    <option>Смарагд</option>
+                    <option>Топаз</option>
+                    <option>Перли</option>
+                </select>
+                <input type="number" id="jewelryWeightInput" placeholder="Вага, г" aria-label="Вага" min="0" step="0.01" />
+                <input type="text" id="jewelrySizeInput" placeholder="Розмір (необов'язково)" aria-label="Розмір" />
+                <textarea id="jewelryDescriptionInput" class="full" placeholder="Опис виробу" aria-label="Опис виробу" rows="3"></textarea>
+                <button id="addJewelryButton" class="button full">Додати до каталогу</button>
+            </div>
+            <p id="message" class="message"></p>
+        </section>
+        <section class="catalog">
+            <h2>Каталог виробів</h2>
+            <ul id="jewelryList" class="jewelry-list"></ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Лабораторна робота 6: десктопний застосунок</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
