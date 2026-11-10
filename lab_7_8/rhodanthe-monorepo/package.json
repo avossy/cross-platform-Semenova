@@ -1,0 +1,14 @@
+{
+  "name": "rhodanthe-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Монорепозиторій застосунку ювелірного салону Rhodanthe: спільне ядро та клієнти (веб, десктоп)",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm test --workspaces --if-present",
+    "start:web": "npm start -w rhodanthe-web",
+    "start:desktop": "npm start -w rhodanthe-monorepo-desktop"
+  }
+}

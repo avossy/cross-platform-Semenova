@@ -1,0 +1,14 @@
+{
+  "name": "rhodanthe-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Веб-клієнт застосунку Rhodanthe",
+  "type": "module",
+  "dependencies": {
+    "@rhodanthe/core": "*"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}

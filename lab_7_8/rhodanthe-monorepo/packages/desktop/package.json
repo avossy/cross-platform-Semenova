@@ -1,0 +1,18 @@
+{
+  "name": "rhodanthe-monorepo-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Десктопний клієнт (Electron) застосунку Rhodanthe",
+  "type": "module",
+  "main": "main.js",
+  "dependencies": {
+    "@rhodanthe/core": "*"
+  },
+  "devDependencies": {
+    "electron": "^45.2.3"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test"
+  }
+}
